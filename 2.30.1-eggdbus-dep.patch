@@ -1,0 +1,13 @@
+Already fixed in git master and gnome-2-30 branches.
+
+--- origsrc/libgnome-keyring-2.30.1/configure.in	2010-04-26 15:11:49.000000000 -0500
++++ src/libgnome-keyring-2.30.1/configure.in	2010-06-15 03:49:06.533492400 -0500
+@@ -84,7 +84,7 @@ AC_CHECK_FUNCS(mlock)
+ #
+ 
+ DBUS_REQUIRED=1.0
+-PKG_CHECK_MODULES([DBUS], dbus-1 >= 1.0 eggdbus-1 >= 0.4)
++PKG_CHECK_MODULES([DBUS], dbus-1 >= 1.0)
+ 
+ DBUS_VERSION=`$PKG_CONFIG --modversion dbus-1`
+ DBUS_MAJOR_VERSION=`echo $DBUS_VERSION | cut -d. -f1`
