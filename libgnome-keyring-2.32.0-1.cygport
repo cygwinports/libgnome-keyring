@@ -1,8 +1,6 @@
 inherit gnome2
 
 
-PATCH_URI="2.30.1-eggdbus-dep.patch"
-
-PKG_NAMES="${PN} libgnome-keyring0 libgnome-keyring-devel"
+PKG_NAMES="libgnome-keyring0 libgnome-keyring-devel"
 libgnome_keyring0_CONTENTS="usr/bin/cyggnome-keyring-0.dll usr/share/doc/ usr/share/locale/"
 libgnome_keyring_devel_CONTENTS="usr/include/ usr/lib/ usr/share/gtk-doc/"
