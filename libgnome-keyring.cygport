@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="libgnome-keyring"
-VERSION=3.8.0
+VERSION=3.10.1
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GNOME Desktop password management client library"
@@ -17,9 +17,11 @@ DEPEND="gnome-common gtk-doc
 	pkgconfig(dbus-1)
 	pkgconfig(glib-2.0)"
 
-PKG_NAMES="libgnome-keyring0 libgnome-keyring-devel girepository-GnomeKeyring1.0 vala-gnome-keyring1"
+PKG_NAMES="${NAME}0 ${NAME}-devel ${NAME}-doc girepository-GnomeKeyring1.0 vala-gnome-keyring1"
 libgnome_keyring0_REQUIRES="gnome-keyring"
 libgnome_keyring0_CONTENTS="usr/bin/cyggnome-keyring-0.dll usr/share/doc/ usr/share/locale/"
-libgnome_keyring_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/"
+libgnome_keyring_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
+libgnome_keyring_doc_CATEGORY="Doc"
+libgnome_keyring_doc_CONTENTS="usr/share/gtk-doc/"
 girepository_GnomeKeyring1_0_CONTENTS="usr/*/gir*/GnomeKeyring-1.0.*"
 vala_gnome_keyring1_CONTENTS="usr/share/vala/vapi/gnome-keyring-1.*"
