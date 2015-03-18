@@ -2,7 +2,7 @@ inherit gnome2
 
 NAME="libgnome-keyring"
 VERSION=3.12.0
-RELEASE=1
+RELEASE=2
 CATEGORY="Libs"
 SUMMARY="GNOME Desktop password management client library"
 DESCRIPTION="GNOME Keyring is a system to store passwords and other sensitive
